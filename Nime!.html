@@ -1,0 +1,343 @@
+<html>
+  <head>
+    <title> Nime!</title>
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <style>
+    *{
+      display: black;
+      width: 100%;
+      background: pink;
+      text-decoration: none;
+      padding: 0;
+      margin: 0;
+      font-family: Monospace;
+    }
+    .box-marq{
+      width: 100%;
+      height: 50px;
+      background: white;
+      border-radius: 5px;
+      border: 1px solid gray;
+    }
+    .logo {
+      background: #52dcff;
+      width: 45;
+      height: 45;
+      border-radius: 50px;
+    }
+    .box-list {
+      width: 50%;
+      height: 299;
+      border-radius: 5px;
+      background: white;
+      border: 1px solid gray;
+      margin-left: 2px;
+    }
+    .img-list {
+      width: 70;
+      height: 70;
+      border-radius: 2px;
+      margin-left: 3px;
+      margin-top: 5px;
+    }
+    .button-list {
+      width: 50;
+      height: 40;
+      background:#52dcff;
+      border: none;
+      color: white;
+      border-top-right-radius: 50px;
+      border-bottom-right-radius: 50px;
+      border-top-left-radius: 50px;
+      border-bottom-left-radius: 50px;
+    }
+    hr {
+      height: 1px;
+    }
+    .button-list:hover {
+      background: #00b4e0;
+    }
+    .button-download {
+      background: #52dcff;
+      width: 100px;
+      height: 30px;
+      color: white;
+      border-radius: 5px;
+      border: none;
+    }
+    .box-marq2 {
+      width: 100%;
+      height: 50px;
+      background: white;
+      border: 1px solid black;
+    }
+    .button-about {
+      background:  #52dcff;
+      width: 50px;
+      height: 50px;
+      color: white;
+      border-radius: 50px;
+      border: none;
+    }
+    .bg {
+      background: white;
+    }
+  </style>
+  <body>
+  <!--List Musik-->
+    <audio id="HikaruNara">
+      <source src="Hikaru nara.mp3" type="audio/mp3">
+      
+    <audio id="Inferno">
+      <source src="Inferno.mp3" type="audio/mp3">
+      
+    <audio id="Tsukiari">
+      <source src="Tsukiari no Michirube x Janji Suci extended.mp3" type="audio/mp3">
+    </audio>
+    
+    <audio id="Memories">
+   <source src="Memories One Piece.mp3" type="audio/mp3">
+    </audio>
+     </audio>
+    
+    <audio id="Orange">
+      <source src="Orange.mp3" type="audio/mp3">
+    </audio>
+    
+    <audio id="BlendS">
+      <source src="BlendS.mp3" type="audio/mp3">
+    </audio>
+  <!---------------->
+    </audio>
+    <center>
+    <div class="box-marq">
+    </div>
+    </center>
+   <br>
+   <br>
+    <br>
+    <br>
+<center>
+  <div class="box-list">
+    <img class="img-list" src="images.png">
+   <hr>
+    Hikaru Nara
+   <hr>
+    <br>
+    <button onclick="PlayAudio()" class="button-list">Play</button>
+    <br>
+     <br>
+    <button onclick="PauseAudio()" class="button-list">Pause</button>
+    <br>
+     <br>
+     <a href="Hikaru nara.mp3">
+   <button class="button-download">Download</button>
+     </a>
+  </div>
+  
+    <br>
+    
+  <div class="box-list">
+<img class="img-list" src="images.png">
+<hr>
+Inferno
+<hr>
+ <br>
+ <button onclick="PlayAudio2()" class="button-list">Play</button>
+   <br>
+    <br>
+  <button onclick="PauseAudio2()" class="button-list">Pause</button>
+    <br>
+     <br>
+    <a href="Inferno.mp3">
+ <button class="button-download">Download</button>
+     </a>
+  </div>
+  
+  <br>
+  
+<div class="box-list">
+  <img class="img-list" src="images.png">
+  <hr>
+Tsukiari no Michirube x Janji Suci extended
+  <hr>
+<br>
+   <button class="button-list" onclick="PlayAudio3()">Play</button>
+    <br> 
+     <br>
+    <button class="button-list" onclick="PauseAudio3()">Pause</button>
+    <br>
+     <br>
+  <a href="Tsukiari no Michirube x Janji Suci extended.mp3">
+    <button class="button-download">Download</button>
+  </a>
+</div>
+
+<br>
+
+  <div class="box-list">
+<img class="img-list" src="images.png">
+  <hr>
+Memories One Piece
+  <hr>
+   <br>
+  <button onclick="PlayAudio4()" class="button-list">Play</button>
+  <br>
+   <br>
+   <button onclick="PauseAudio4()" class="button-list">Pause</button>
+   <br>
+    <br>
+  <a href="Memories One Piece.mp3">
+    <button class="button-download">Download</button>
+  </a>
+</div>
+
+<br>
+
+ <div class="box-list">
+ <img class="img-list" src="images.png">
+ <hr>
+ Orange
+ <hr>
+ <br>
+  <button onclick="PlayAudio5()" class="button-list">Play</button>
+  <br>
+   <br>
+  <button onclick="PauseAudio5()" class="button-list">Pause</button>
+  <br>
+   <br>
+   <a href="Orange.mp3">
+     <button class="button-download">Download</button>
+   </a>
+ </div>
+ 
+  <br>
+  
+  <div class="box-list">
+ <img class="img-list" src="images.png">
+  <hr>
+  BlendS
+  <hr>
+   <br>
+   <button onclick="PlayAudio6()" class="button-list">Play</button>
+    <br>
+     <br>
+    <button onclick="PauseAudio6()" class="button-list">Pause</button>
+    <br>
+     <br>
+     <a href="BlendS.mp3">
+    <button class="button-download">
+      Download
+    </button>
+     </a>
+  </div>
+ <br>
+  <br>
+<div class="box-marq2">
+  <a class="bg" href="about.html">
+ <button class="button-about
+    ">?</button>
+  </a>
+</div>
+  </body>
+</html>
+
+
+
+<script>
+  //HikaruNara//
+  var Hikaru =
+  
+  document.getElementById("HikaruNara");
+  
+  function PlayAudio() {
+    Hikaru.play();
+    Inferno.pause();
+    Tsukiari.pause();
+    Memories.pause();
+    Orange.pause();
+    BlendS.pause();
+  }
+  function PauseAudio() {
+    Hikaru.pause();
+  }
+  
+  var Inferno =
+  
+  document.getElementById("Inferno");
+  
+  function PlayAudio2() {
+    Inferno.play();
+    Hikaru.pause();
+    Tsukiari.pause();
+    Memories.pause();
+    Orange.pause();
+    BlendS.pause();
+  }
+  function PauseAudio2() {
+    Inferno.pause();
+  }
+  
+  var Tsukiari =
+  
+  document.getElementById("Tsukiari");
+  
+  function PlayAudio3() {
+    Tsukiari.play();
+    Hikaru.pause();
+    Inferno.pause();
+    Memories.pause();
+    Orange.pause();
+    BlendS.pause();
+  }
+  function PauseAudio3() {
+    Tsukiari.pause();
+  }
+  
+  var Memories =
+  
+  document.getElementById("Memories");
+  
+  function PlayAudio4() {
+    Memories.play();
+    Tsukiari.pause();
+    Inferno.pause();
+    Hikaru.pause();
+    Orange.pause();
+    BlendS.pause();
+  }
+  function PauseAudio4() {
+    Memories.pause();
+  }
+  
+  var Orange =
+  
+  document.getElementById("Orange");
+  
+  function PlayAudio5() {
+    Orange.play();
+    Hikaru.pause();
+    Inferno.pause();
+    Memories.pause();
+    Tsukiari.pause();
+    BlendS.pause();
+  }
+  
+  function PauseAudio5() {
+    Orange.pause();
+  }
+  
+  var BlendS =
+  
+  document.getElementById("BlendS");
+  
+  function PlayAudio6() {
+    BlendS.play();
+    Inferno.pause();
+    Memories.pause();
+    Hikaru.pause();
+    Orange.pause();
+    Tsukiari.pause();
+  }
+</script>
